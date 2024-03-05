@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Fitclub</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="/index.html">Inicio</a></li>
+        <li class="link"><a href="/team.html">Nuestro equipo</a></li>
+        <li class="link"><a href="/club.html">Club</a></li>
+        <li class="link"><a href="/canchas.html">Canchas</a></li>
+        <li class="link"><a href="#">Entrenamientos</a></li>
+      </ul>
+      <button class="btn">Join Now</button>
+    </nav>
+    <header class="section__container header__container">
+      <div class="header__content">
+        <span class="bg__blur"></span>
+        <span class="bg__blur header__blur"></span>
+        <h4>¿Te apasiona el squash? </h4>
+        <h1><span>CLUB DEPORTIVO</span> LIVESQUASH</h1>
+        <p>
+          Livesquash S.A.S. es una empresa con el propósito de contribuir a la promoción,
+          desarrollo y práctica del squash en Colombia. 
+        </p>
+        
+      </div>
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+    </header>
+
+    <section class="section__container explore__container">
+      <div class="explore__header">
+        <h2 class="section__header">SERVICIOS</h2>
+        <div class="explore__nav">
+        </div>
+      </div>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-boxing-fill"></i></span>
+          <h4>Club deportivo</h4>
+          <p>
+            Con tu afiliacion a Livesquash obtienes beneficios en tus practicas,
+            alquileres de cancha y mas!
+          </p>
+          <a href="/club.html">Ver mas. <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-heart-pulse-fill"></i></span>
+          <h4>Reserva de canchas</h4>
+          <p>
+            Tenemos 2 canchas situadas en el exclusivo 
+            Club La Aguadora a tu disposición.
+          </p>
+          <a href="/canchas.html">Ver mas. <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-run-line"></i></span>
+          <h4>Entrenamiento</h4>
+          <p>
+            Si tienes acceso a una cancha de
+            squash y quieres un coach para entrenar, no dudes en contactarnos.
+          </p>
+          <a href="#  ">Ver mas. <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section__container join__container">
+      <h2 class="section__header">Porque escogernos?</h2>
+      <p class="section__subheader">
+        Our diverse membership base creates a friendly and supportive
+        atmosphere, where you can make friends and stay motivated.
+      </p>
+      <div class="join__image">
+        <img src="assets/join.jpg" alt="Join" />
+        <div class="join__grid">
+          <div class="join__card">
+            <span><i class="ri-user-star-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Reconocimiento</h4>
+              <p>Deportivo expedido por el I.D.R.D.</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-vidicon-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Afiliacion</h4>
+              <p>A la Liga de Squash de Bogotá (Lisbog)</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-building-line"></i></span>
+            <div class="join__card__content">
+              <h4>Certificacion</h4>
+              <p>Coaches certificados por la Federación Mundial de Squash (WSF)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+
+
+    <footer class="section__container footer__container">
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
+        <p>
+          Da el primer paso hacia un tú más saludable y en forma con el mejor club de squash de Bogotá. 
+          ¡Vamos a jugar, alcanzar metas y conquistar desafíos juntos en el mundo del squash!
+        </p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/livesquash/"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/club.livesquash/"><i class="ri-instagram-line"></i></a>
+          <a href="mailto:clublivesquash@gmail.com"><i class="ri-mail-send-line"></i></a>
+        </div>
+      </div>
+      <div id="mapa" style="height: 100%; width: 100%"></div>
+    </footer> 
+    <div class="footer__bar">
+      Livesquash S.A.S.
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mapa = L.map('mapa').setView([4.693417, -74.026417], 15); // Coordenadas y nivel de zoom
+  
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(mapa);
+  
+      // Marcador en las coordenadas proporcionadas
+      var marcador = L.marker([4.693417, -74.026417]).addTo(mapa);
+    });
+  </script>
+  
+</html>

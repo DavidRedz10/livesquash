@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Web Design Mastery | Fitclub</title>
+    <style>
+      #mapa {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="/index.html">Inicio</a></li>
+        <li class="link"><a href="/team.html">Nuestro equipo</a></li>
+        <li class="link"><a href="/club.html">Club</a></li>
+        <li class="link"><a href="/canchas.html">Canchas</a></li>
+        <li class="link"><a href="#">Entrenamientos</a></li>
+      </ul>
+      <button class="btn">Join Now</button>
+    </nav>
+
+    <section class="review">
+      <div class="section__container review__container">
+        <span><i class="ri-double-quotes-r"></i></span>
+        <div class="review__content">
+          <h4>Conoce al equipo</h4>
+          <p>
+            Administrador de empresas egresado de la Pontificia Universidad Javeriana, con experiencia laboral en el área de Recursos Humanos. 
+            Jugador de squash de alto rendimiento con experiencia de 24 años en el deporte. Compitiendo activamente a nivel Colombia en primera categoría, selección Colombia 2023 y perteneciente al equipo de rendimiento de Bogotá. Más de 150 premios y reconocimientos a nivel internacional, nacional y universitario como deportista. 
+            Coach L2 certificado por la World Squash Federation.
+            Miembro del Comité Técnico de la Federación Colombiana de Squash.
+            Entrenador líder región Bogotá del proyecto Talentos Colombia del Ministerio del Deporte.
+          </p>
+          <div class="review__footer">
+            <div class="review__member">
+              <img src="assets/member.jpg" alt="member" />
+              <div class="review__member__details">
+                <h4>Alfonso Marroquín Parra</h4>
+                <p>Gerente General</p>
+              </div>
+            </div>
+            <div class="review__nav">
+              <span><i class="ri-arrow-left-line"></i></span>
+              <span><i class="ri-arrow-right-line"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section__container price__container">
+      <h2 class="section__header">ADMINISTRATIVOS</h2>
+      <p class="section__subheader">
+        
+      </p>
+
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Alexander Combariza</h4>
+            <div class="review__footer">
+              <div class="review__member">
+                <img src="assets/alex.jpeg" alt="member" />
+                <div class="review__member__details">
+                </div>
+              </div>
+              <h4>Miembro Comité Ejecutivo</h4>
+            </div>
+          </div>
+          <button class="btn price__btn">Join Now</button>
+        </div>
+
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Sara Martínez</h4>
+            <div class="review__footer">
+              <div class="review__member">
+                <img src="assets/sara.jpeg" alt="member" />
+                <div class="review__member__details">
+                </div>
+              </div>
+              <h4>Miembro Comité Ejecutivo</h4>
+            </div>
+          </div>
+          <button class="btn price__btn">Join Now</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    
+    <section class="section__container price__container">
+      <h2 class="section__header">NUESTROS COACHES</h2>
+      <p class="section__subheader">
+        
+      </p>
+
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Joaquin Fernandez</h4>
+            <div class="review__footer">
+              <div class="review__member">
+                <img src="assets/alex.jpeg" alt="member" />
+                <div class="review__member__details">
+                </div>
+              </div>
+              <h4>Entrenador</h4>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <a href="https://wa.me/573007870313"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/joakofer0/"><i class="ri-instagram-line"></i></a>
+            
+          </div>
+        </div>
+
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Pocho Marroquin</h4>
+            <div class="review__footer">
+              <div class="review__member">
+                <img src="assets/sara.jpeg" alt="member" />
+                <div class="review__member__details">
+                </div>
+              </div>
+              <h4>Entrenador</h4>
+            </div>
+          </div>
+          <p>Coach nivel 2 certificado por la World Squash Federation.
+            Juego squash hace 24 años. Fui capitán de la selección Colombia junior de squash y también del equipo Javeriano de squash. 
+            Cuento con experiencia en competencias regionales, nacionales e internacionales. 
+            Actualmente juego en primera categoría y entreno con el equipo de rendimiento de la Liga de Squash de Bogotá.</p>
+            <div class="footer__socials">
+              <a href="https://wa.me/573102674750"><i class="ri-whatsapp-fill"></i></a>
+              <a href="https://www.instagram.com/pochosquash?igshid=YmMyMTA2M2Y%3D"><i class="ri-instagram-line"></i></a>
+              
+            </div>
+        </div>
+
+
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Tomas Infante</h4>
+            <div class="review__footer">
+              <div class="review__member">
+                <img src="assets/sara.jpeg" alt="member" />
+                <div class="review__member__details">
+                </div>
+              </div>
+              <h4>Entrenador</h4>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <a href="https://wa.me/573192729140"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/tomasinfante_18/"><i class="ri-instagram-line"></i></a>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="section__container join__container">
+      <h2 class="section__header">WHY JOIN US ?</h2>
+      <p class="section__subheader">
+        Our diverse membership base creates a friendly and supportive
+        atmosphere, where you can make friends and stay motivated.
+      </p>
+      <div class="join__image">
+        <img src="assets/join.jpg" alt="Join" />
+        <div class="join__grid">
+          <div class="join__card">
+            <span><i class="ri-user-star-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Personal Trainer</h4>
+              <p>Unlock your potential with our expert Personal Trainers.</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-vidicon-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Practice Sessions</h4>
+              <p>Elevate your fitness with practice sessions.</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-building-line"></i></span>
+            <div class="join__card__content">
+              <h4>Good Management</h4>
+              <p>Supportive management, for your fitness success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section__container footer__container">
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
+        <p>
+          Da el primer paso hacia un tú más saludable y en forma con el mejor club de squash de Bogotá. 
+          ¡Vamos a jugar, alcanzar metas y conquistar desafíos juntos en el mundo del squash!
+        </p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/livesquash/"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/club.livesquash/"><i class="ri-instagram-line"></i></a>
+          <a href="mailto:clublivesquash@gmail.com"><i class="ri-mail-send-line"></i></a>
+        </div>
+      </div>
+      <div id="mapa" style="height: 100%; width: 100%"></div>
+    </footer>
+    <div class="footer__bar">
+      Livesquash S.A.S.
+    </div>
+  </body>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mapa = L.map('mapa').setView([4.693417, -74.026417], 15); // Coordenadas y nivel de zoom
+  
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(mapa);
+  
+      // Marcador en las coordenadas proporcionadas
+      var marcador = L.marker([4.693417, -74.026417]).addTo(mapa);
+    });
+  </script>
+
+</html>
