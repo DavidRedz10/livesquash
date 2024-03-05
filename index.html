@@ -153,5 +153,13 @@
       var marcador = L.marker([4.693417, -74.026417]).addTo(mapa);
     });
   </script>
+
+<script>
+  // JavaScript para mostrar/ocultar el menú al hacer clic en el botón de hamburguesa
+  document.querySelector('.menu-icon').addEventListener('click', function () {
+    var navLinks = document.querySelector('.nav__links');
+    navLinks.style.display = (navLinks.style.display === 'block') ? 'none' : 'block';
+  });
+</script>
   
 </html>

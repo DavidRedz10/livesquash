@@ -656,3 +656,38 @@ nav {
     text-align: center;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .link {
+    margin: 0;
+    text-align: center;
+  }
+
+  .link a {
+    padding: 15px;
+    display: block;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  /* Mostrar el menú al hacer clic en el botón de hamburguesa */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+}
