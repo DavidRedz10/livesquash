@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Web Design Mastery | Fitclub</title>
   </head>
@@ -24,17 +24,16 @@
         <li class="link"><a href="/canchas.html">Canchas</a></li>
         <li class="link"><a href="#">Entrenamientos</a></li>
       </ul>
-
+      <button class="btn">Join Now</button>
     </nav>
+
     <header class="section__container header__container">
       <div class="header__content">
         <span class="bg__blur"></span>
         <span class="bg__blur header__blur"></span>
-        <h4>¿Te apasiona el squash? </h4>
-        <h1><span>CLUB DEPORTIVO</span> LIVESQUASH</h1>
+        <h1><span>Club deportivo </span>livesquash</h1>
         <p>
-          Livesquash S.A.S. es una empresa con el propósito de contribuir a la promoción,
-          desarrollo y práctica del squash en Colombia. 
+          Tenemos 2 canchas situadas en el exclusivo Club La Aguadora a tu disposición.
         </p>
         
       </div>
@@ -54,36 +53,46 @@
           <span><i class="ri-boxing-fill"></i></span>
           <h4>Club deportivo</h4>
           <p>
-            Con tu afiliacion a Livesquash obtienes beneficios en tus practicas,
-            alquileres de cancha y mas!
+          Con tu afiliacion a Livesquash obtienes 
+          beneficios en tus practicas, alquileres de cancha y mas!
           </p>
-          <a href="/club.html">Ver mas. <i class="ri-arrow-right-line"></i></a>
         </div>
         <div class="explore__card">
           <span><i class="ri-heart-pulse-fill"></i></span>
           <h4>Reserva de canchas</h4>
           <p>
-            Tenemos 2 canchas situadas en el exclusivo 
-            Club La Aguadora a tu disposición.
+            Tenemos 2 canchas situadas en el exclusivo Club La Aguadora a tu disposición.
           </p>
-          <a href="/canchas.html">Ver mas. <i class="ri-arrow-right-line"></i></a>
         </div>
         <div class="explore__card">
           <span><i class="ri-run-line"></i></span>
           <h4>Entrenamiento</h4>
           <p>
-            Si tienes acceso a una cancha de
-            squash y quieres un coach para entrenar, no dudes en contactarnos.
+            Si tienes acceso a una cancha de squash y quieres un coach para entrenar, no dudes en contactarnos.
           </p>
-          <a href="#  ">Ver mas. <i class="ri-arrow-right-line"></i></a>
         </div>
       </div>
     </section>
 
+    <section class="section__container class__container">
+
+        <div id="mapa"></div>
+   
+      <div class="class__content">
+        <h2 class="section__header">Ubicación</h2>
+        <p>
+          Club La Aguadora - Calle 119 # 0-10 Este
+        </p>
+        <h2 class="section__header">Horario</h2>
+        <p>
+          Lunes a Domingo </br>
+          De 6:00 a.m. hasta las 09:00 p.m.
+        </p>
+        <button class="btn">Book A Class</button>
+      </div>
+    </section>
 
 
-
-  
 
 
 
@@ -103,7 +112,7 @@
         </div>
       </div>
       <div id="mapa" style="height: 100%; width: 100%"></div>
-    </footer> 
+    </footer>
     <div class="footer__bar">
       Livesquash S.A.S.
     </div>
@@ -121,13 +130,5 @@
       var marcador = L.marker([4.693417, -74.026417]).addTo(mapa);
     });
   </script>
-
-<script>
-  // JavaScript para mostrar/ocultar el menú al hacer clic en el botón de hamburguesa
-  document.querySelector('.menu-icon').addEventListener('click', function () {
-    var navLinks = document.querySelector('.nav__links');
-    navLinks.style.display = (navLinks.style.display === 'block') ? 'none' : 'block';
-  });
-</script>
   
 </html>
